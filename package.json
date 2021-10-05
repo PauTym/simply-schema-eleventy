@@ -1,10 +1,10 @@
 {
-  "name": "@pautym/dynamic-eleventy-schema",
+  "name": "@pautym/simply-schema-eleventy",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.5",
+  "version": "1.0.0",
   "engines": {
     "node": ">=10.0.0"
   },
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pautym/dynamic-eleventy-schema.git"
+    "url": "git+https://github.com/pautym/simply-schema-eleventy.git"
   },
   "keywords": [
     "11ty",
@@ -37,9 +37,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pautym/dynamic-eleventy-schema/issues"
+    "url": "https://github.com/pautym/simply-schema-eleventy/issues"
   },
-  "homepage": "https://github.com/pautym/dynamic-eleventy-schema#readme",
+  "homepage": "https://github.com/pautym/simply-schema-eleventy#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@commitlint/cli": "^9.0.1",

@@ -2,12 +2,14 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+# The simple way to write 11ty-schema
+
 [Eleventy](https://www.11ty.dev/) plugin to generate JSON-LD [structured data](https://schema.org/).
 
+- [No Restricions!](#no-restricions)
 - [Installation](#installation)
-- [No Restricions](#no_restricions)
 - [Usage](#usage)
-- [Related plugins](#related-plugins)
+- [Thanks](#thanks-to)
 - [License](#license)
 
 ## No Restrictions
@@ -20,16 +22,12 @@ The shortcode supports all schema types:
 
 - [Schema](https://schema.org/).
 
-
-# Thanks to:
-[quasibit](https://github.com/quasibit) for creating [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema)
-
 ## Installation
 
 Install the package:
 
 ```sh
-npm install --save @pautym/dynamic-eleventy-schema
+npm install --save @pautym/simply-schema-eleventy
 ```
 
 Add the plugin to your [Eleventy configuration](https://www.11ty.dev/docs/config/)
@@ -52,7 +50,7 @@ If you already have the value in other properties, you can use
 Call the shortcode where you want the script to be displayed:
 
 ```njk
-{% jsonLdScript meta, type, tags %}
+{% jsonLdScript meta %}
 ```
 
 ### Validation
@@ -62,6 +60,9 @@ You can validate the structured data using one of the following tools:
 - [Google's Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/).
 - [JSON-LD Playground](https://json-ld.org/playground/).
 - [JSON Schema Validator](https://www.jsonschemavalidator.net/).
+
+## Thanks to:
+[quasibit](https://github.com/quasibit) for creating [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema)
 
 ## License
 
