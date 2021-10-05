@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/@pautym/dynamic-eleventy-schema)](https://www.npmjs.com/package/@pautym/simply-schema-eleventy)
+[![npm](https://img.shields.io/npm/v/@pautym/simply-eleventy-schema)](https://www.npmjs.com/package/@pautym/simply-schema-eleventy)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
