@@ -1,17 +1,28 @@
-[![npm](https://img.shields.io/npm/v/@pautym/dynamic-eleventy-schema)](https://www.npmjs.com/package/@PauTym/dynamic-eleventy-schema)
+[![npm](https://img.shields.io/npm/v/@pautym/dynamic-eleventy-schema)](https://www.npmjs.com/package/@pautym/simply-schema-eleventy)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Eleventy](https://www.11ty.dev/) plugin to generate JSON-LD [structured data](https://schema.org/).
 
 - [Installation](#installation)
-- [Introduction](#introduction)
+- [No Restricions](#no_restricions)
 - [Usage](#usage)
 - [Related plugins](#related-plugins)
 - [License](#license)
 
+## No Restrictions
+
+This plugin is a remake of [quasibit's](https://github.com/quasibit) [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema), it [improves] on the JSON-LD script implementation, you are no longer requiered to use schema-values you don't need. 
+You can basically write your schema into the frontmatter without any restricions.
+The plugin adds a shortcode to generate the JSON-LD script (including the `<script>` tag).
+
+The shortcode supports all schema types:
+
+- [Schema](https://schema.org/).
+
+
 # Thanks to:
-[quasibit](https://github.com/quasibit) for creating -[@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema)
+[quasibit](https://github.com/quasibit) for creating [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema)
 
 ## Installation
 
@@ -25,22 +36,12 @@ Add the plugin to your [Eleventy configuration](https://www.11ty.dev/docs/config
 (usually `.eleventy.js`):
 
 ```js
-const schema = require("@pautym/dynamic-eleventy-schema");
+const schema = require("@pautym/simply-schema-eleventy");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(schema);
 };
 ```
-
-## Introduction
-
-The plugin adds a shortcode to generate the JSON-LD script (including the `<script>` tag).
-
-The shortcode supports the following schema types:
-
-- [WebSite](https://schema.org/WebSite).
-- [BlogPosting](https://schema.org/BlogPosting).
-- [WebPage](https://schema.org/WebPage).
 
 ## Usage
 
