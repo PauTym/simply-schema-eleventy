@@ -7,7 +7,7 @@ module.exports = ({ meta }) => {
   const spaces = 2;
 
   if(json === ""){
-    return ""
+    return "";
   };
   return `
   <script type="application/ld+json">

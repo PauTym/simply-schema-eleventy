@@ -1,10 +1,11 @@
 "use strict";
 
 module.exports = ({ meta }) => {
-  if(!meta){ return ""};
+  if(!meta) { 
+    return "";
+  };
   return {
     "@context": "https://schema.org",
-    ...meta
+    ...meta,
   };
-
 };
