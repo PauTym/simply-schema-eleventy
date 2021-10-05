@@ -49,7 +49,7 @@ If you already have the value in other properties, you can use
 
 Call the shortcode where you want the script to be displayed:
 
-```njk
+```njk 
 {% jsonLdScript meta %}
 ```
 
