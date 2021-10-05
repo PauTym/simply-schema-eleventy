@@ -7,7 +7,5 @@ const script = require("./src/script.js");
  * @param {Object} eleventyConfig Eleventy Configuration API.
  */
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addShortcode("jsonLdScript", (meta) =>
-    script({ meta })
-  );
+  eleventyConfig.addShortcode("jsonLdScript", (meta) => script({ meta }));
 };
