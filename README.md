@@ -14,13 +14,11 @@
 
 ## No Restrictions
 
-This plugin is a remake of [quasibit's](https://github.com/quasibit) [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema), it [improves] on his the JSON-LD script implementation, you are no longer forced to use JSON-LD-values you don't need. 
+This plugin is a remake of [quasibit's](https://github.com/quasibit) [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema), it [improves] on his JSON-LD script implementation, you are no longer forced to use JSON-LD-values you don't need. 
 You can basically write your schema into the frontmatter without any restricions. Please refer to the files in [demo](./demo).
 The plugin adds a shortcode to generate the JSON-LD script (including the `<script>` tag).
 
-The shortcode supports all schema types:
-
-- [Schema](https://schema.org/).
+The shortcode supports all [Schema](https://schema.org/) types.
 
 ## Installation
 
@@ -62,7 +60,7 @@ You can validate the structured data using one of the following tools:
 - [JSON Schema Validator](https://www.jsonschemavalidator.net/).
 
 ## Thanks to:
-[quasibit](https://github.com/quasibit) for creating [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema)
+[quasibit](https://github.com/quasibit) for creating [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema)!
 
 ## License
 
