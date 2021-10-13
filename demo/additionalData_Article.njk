@@ -1,0 +1,30 @@
+---
+layout: layout.njk
+additionalMetadata: 
+  "text": This is an example for the addition of more meta data
+  "name": "test for additionalMeta"
+---
+<head>
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Article",
+      "headline" : "headline",
+      "author" : "John Doe",
+      "image" : [
+          "expample.com/image.png"
+      ],
+      "datePublished" : 01.01.21,
+      "articleSection" : "articleSection",
+      "articleBody" : "articleBody",
+      "url" : "example.com/article",
+      "publisher" : {
+          "@type" : "Organization",
+          "name" : "Organization",
+          "logo" : "example.com/logo.svg"
+      }{% if additionalMetadata %}{% addJsonData additionalMetadata %}{% endif %}
+    }
+  </script>
+</head>
+
+Post content...

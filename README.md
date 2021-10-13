@@ -14,9 +14,9 @@
 
 ## No Restrictions
 
-This plugin is a remake of [quasibit's](https://github.com/quasibit) [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema), it [improves] on his JSON-LD script implementation, you are no longer forced to use JSON-LD-values you don't need. 
+This plugin is a remake of [quasibit's](https://github.com/quasibit) [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema), it improves on his JSON-LD script implementation, you are no longer forced to use JSON-LD-values you don't need. 
 You can basically write your schema into the frontmatter without any restricions. Please refer to the files in [demo](./demo).
-The plugin adds a shortcode to generate the JSON-LD script (including the `<script>` tag).
+The plugin adds a shortcode to generate JSON-LD structure (including the `<script>` tag).
 
 The shortcode supports all [Schema](https://schema.org/) types.
 
@@ -41,6 +41,7 @@ module.exports = function(eleventyConfig) {
 
 ## Usage
 
+### Creating the schema
 Add data/front matter to your pages. Please refer to the files in [demo](./demo).
 If you already have the value in other properties, you can use
 [computed data](https://www.11ty.dev/docs/data-computed/) to clone them.
@@ -49,6 +50,13 @@ Call the shortcode where you want the script to be displayed:
 
 ```njk 
 {% jsonLdScript meta %}
+```
+
+### Adding content to a hardcoded Schema in hindsight
+Follow the same Steps as listed above, but call this shortcode instead:
+
+```njk
+{% addJsonData meta %}
 ```
 
 ### Validation
